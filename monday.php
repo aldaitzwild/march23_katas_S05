@@ -16,6 +16,11 @@
  * [ALDAITZ THOMAS] : Nom du client
  */
 
+ function parseLine(string $line): string 
+ {
+    return substr($line, 9) . ' place n°' . substr($line, 3, 2);
+ }
+
  echo parseLine('F67893773ALDAITZ THOMAS') . PHP_EOL;
  echo parseLine('F67874556DORMOY LUDOVIC') . PHP_EOL;
  echo parseLine('F93664777NGUON GWENDOLYNE') . PHP_EOL;
